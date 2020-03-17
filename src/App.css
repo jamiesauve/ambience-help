@@ -1,0 +1,12 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  background-color: #222;
+}
