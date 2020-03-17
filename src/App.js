@@ -17,12 +17,13 @@ function App() {
 
   return (
     <div className="App">
-      {_.map(tracks, (categoryData, categoryName) => (
+      {_.map(tracks, (category, categoryName) => (
         <ThemeBox
           copyTrack={copyTrack}
           key={categoryName}
           label={categoryName}
-          tracks={categoryData}
+          labelColor={category.labelColor}
+          tracks={category.trackObjects}
         />
       ))}
     </div>
