@@ -22,7 +22,7 @@ const ThemeBox = props => {
       {_.map(props.tracks, (track) => (
         <div
           className="ThemeBox__track"
-          key={track.location}
+          key={`${track.location}-${props.label}`}
           onClick={() => props.copyTrack(track.location)}
         >
           {track.label}
